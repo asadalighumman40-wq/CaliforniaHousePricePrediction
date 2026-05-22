@@ -12,29 +12,29 @@ st.write(
     "Enter house details to predict California house prices."
 )
 
-longitude = st.sidebar.number_input("Longitude")
+longitude = st.number_input("Longitude")
 
-latitude = st.sidebar.number_input("Latitude")
+latitude = st.number_input("Latitude")
 
-housing_median_age = st.sidebar.number_input("Housing Median Age")
+housing_median_age = st.number_input("Housing Median Age")
 
-total_rooms = st.sidebar.number_input("Total Rooms",
+total_rooms = st.number_input("Total Rooms",
                               min_value=1.0
                               )
 
-total_bedrooms = st.sidebar.number_input("Total Bedrooms")
+total_bedrooms = st.number_input("Total Bedrooms")
 
-population = st.sidebar.number_input("Population",
+population = st.number_input("Population",
                              min_value=1.0
                              )
 
-households = st.sidebar.number_input("Households",
+households = st.number_input("Households",
                              min_value=1.0
                              )
 
-median_income = st.sidebar.number_input("Median Income")
+median_income = st.number_input("Median Income")
 
-ocean_proximity = st.sidebar.selectbox(
+ocean_proximity = st.selectbox(
     "Ocean Proximity",
     [
         "<1H OCEAN",
